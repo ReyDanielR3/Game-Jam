@@ -8,6 +8,7 @@ public class SantaBals : MonoBehaviour
 
     public float counter;
     public float dropTime;
+    public GameObject ball;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class SantaBals : MonoBehaviour
         if (counter > dropTime)
         {
             counter = 0;
-            
+            Instantiate(ball, new Vector3(this.transform.position.x, this.transform.position.y - 1f, this.transform.position.z), Quaternion.identity);   
         }
 
     }

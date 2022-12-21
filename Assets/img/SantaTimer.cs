@@ -9,7 +9,7 @@ public class SantaTimer : MonoBehaviour
 {
 
     float currentTime = 0f;
-    float startingTime = 10f;
+    float startingTime = 20f;
 
     public Text countDownText;
     
@@ -32,12 +32,12 @@ public class SantaTimer : MonoBehaviour
         {
             currentTime = 0;
         }
-        if (currentTime <= 6)
+        if (currentTime <= 12)
         {
             countDownText.color = Color.yellow;
         }
 
-        if (currentTime <= 3)
+        if (currentTime <= 6)
         {
             countDownText.color = Color.red;
         }
