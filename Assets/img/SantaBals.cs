@@ -23,6 +23,7 @@ public class SantaBals : MonoBehaviour
         if (counter > dropTime)
         {
             counter = 0;
+            
         }
 
     }
