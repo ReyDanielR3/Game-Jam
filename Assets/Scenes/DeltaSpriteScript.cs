@@ -31,7 +31,7 @@ public class DeltaSpriteScript : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, upspeedMovement);
         }
 
-       horizontalMovement = Input.GetAxis("Horizontal") * Time.deltaTime * speed*2;
+       horizontalMovement = Input.GetAxis("Horizontal") * Time.deltaTime * speed*5;
         
     
        rb.velocity = new Vector2(horizontalMovement, rb.velocity.y);
@@ -45,7 +45,7 @@ public class DeltaSpriteScript : MonoBehaviour
         if (horizontalMovement < 0){
             spriteRenderer.sprite = left;
         }
-        if (rb.position.y > -2){
+        if (rb.position.y > -2){ 
             spriteRenderer.sprite = jump;
         }
         Debug.Log(rb.position.y);
