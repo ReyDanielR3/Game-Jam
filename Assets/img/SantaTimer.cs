@@ -23,7 +23,8 @@ public class SantaTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        countDownText.color = Color.green;
+        Color green = Color.green;
+        countDownText.color = green;
 
         currentTime -= 1 * Time.deltaTime;
         countDownText.text = currentTime.ToString ("0");
